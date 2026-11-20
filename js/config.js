@@ -16,12 +16,19 @@ window.MR_CONFIG = {
 
   currency: { en: "EGP", ar: "ج.م" },
 
-  // Shipping
-  shippingFee: 85,          // flat shipping fee
-  freeShippingOver: 3500,   // free shipping threshold (subtotal)
+  // Shipping fees by zone (EGP)
+  shipping: {
+    cairoGiza: 60,     // القاهرة / الجيزة / القليوبية
+    deltaCanal: 75,    // الإسكندرية، الدلتا، مدن القناة
+    upperEgypt: 95     // الصعيد والمحافظات الحدودية
+  },
+  freeShippingOver: 2500,   // free shipping threshold (subtotal)
+
+  // Bundle offer: buy N pieces or more → percent off
+  bundle: { minQty: 2, percent: 10 },
 
   // Promo codes: code → percent off
   promoCodes: { ROYALE10: 10, WELCOME: 15 },
 
-  defaultLang: "en"         // "en" or "ar"
+  defaultLang: "ar"         // "ar" or "en"
 };

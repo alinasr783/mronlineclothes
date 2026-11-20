@@ -1,5 +1,5 @@
 /* Maison Royale — network-first service worker (offline fallback) */
-const CACHE = "mr-v1";
+const CACHE = "mr-v2";
 self.addEventListener("install", (e) => { self.skipWaiting(); });
 self.addEventListener("activate", (e) => { e.waitUntil(self.clients.claim()); });
 self.addEventListener("fetch", (e) => {
